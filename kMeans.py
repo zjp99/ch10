@@ -68,7 +68,6 @@ def kMeans(dataSet, k, distMeas=distEclud, createCent=randCent):
             centroids[cent, :] = mean(ptsInClust, axis=0)
     return centroids, clusterAssment
 
-
 # 绘制数据集和质心图
 def showCluster(dataSet, k, centroids, clusterAssment):
     numSamples, dim = dataSet.shape

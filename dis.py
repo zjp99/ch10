@@ -39,7 +39,7 @@ def kMeans(dataSet,  distMeas=distEclud ):
     for i in range(m):
         minDist = inf
         minIndex = -1
-        # 循环质心个数的次数
+#循环质心个数的次数
         for j in range(3):
             distJI = distMeas(centroids[j, :], dataSet[i, :])
             if distJI < minDist:
